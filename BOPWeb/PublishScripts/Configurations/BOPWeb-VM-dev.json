@@ -1,0 +1,66 @@
+{
+    "environmentSettings": {
+        "cloudService": {
+            "name": "",
+            "affinityGroup": "",
+            "location": "",
+            "virtualNetwork": "",
+            "subnet": "",
+            "availabilitySet": "",
+            "virtualMachine": {
+                "name": "",
+                "vhdImage": "a699494373c04fc0bc8f2bb1389d6106__Win2K8R2SP1-Datacenter-201506.01-en.us-127GB.vhd",
+                "size": "Standard_D1",
+                "user": "",
+                "password": "",
+                "enableWebDeployExtension": true,
+                "isVMImage": false,
+                "isGeneralizedImage": true,
+                "endpoints": [
+                    {
+                        "name": "Http",
+                        "protocol": "TCP",
+                        "publicPort": "80",
+                        "privatePort": "80"
+                    },
+                    {
+                        "name": "Https",
+                        "protocol": "TCP",
+                        "publicPort": "443",
+                        "privatePort": "443"
+                    },
+                    {
+                        "name": "WebDeploy",
+                        "protocol": "TCP",
+                        "publicPort": "8172",
+                        "privatePort": "8172"
+                    },
+                    {
+                        "name": "Remote Desktop",
+                        "protocol": "TCP",
+                        "publicPort": "3389",
+                        "privatePort": "3389"
+                    },
+                    {
+                        "name": "Powershell",
+                        "protocol": "TCP",
+                        "publicPort": "5986",
+                        "privatePort": "5986"
+                    }
+                ]
+            }
+        },
+        "databases": [
+            {
+                "connectionStringName": "",
+                "databaseName": "",
+                "serverName": "",
+                "user": "",
+                "password": ""
+            }
+        ],
+        "webDeployParameters": {
+            "iisWebApplicationName": "Default Web Site"
+        }
+    }
+}
