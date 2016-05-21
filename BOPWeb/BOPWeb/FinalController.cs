@@ -40,7 +40,7 @@ namespace BOPWeb
             }
             finally
             {
-                GC.Collect(2);
+                GC.Collect(0);  //被提醒说2代GC可能导致阻塞，虽然我也不知道怎么操作比较好，不过先这样吧
             }
         }
 
